@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habib College - Excellence in Education</title>
+    <meta name="description" content="Habib College - A premier institution dedicated to academic excellence, innovation, and character development. Discover our programs, faculty, and vibrant campus life.">
+    <meta name="keywords" content="Habib College, education, university, academic programs, faculty, students">
+    <meta name="author" content="Habib college number 605">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Habib College - Excellence in Education">
+    <meta property="og:description" content="A premier institution dedicated to academic excellence and innovation">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://habibcollege.edu">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'oxford-blue': '#003366',
+                        'navy-blue': '#1e3a8a',
+                        'academic-green': '#2d5016',
+                        'gold-accent': '#d4af37',
+                        'cream': '#faf7f2'
+                    },
+                    fontFamily: {
+                        'playfair': ['Playfair Display', 'serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                        'crimson': ['Crimson Text', 'serif']
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.6s ease-out',
+                        'slide-up': 'slideUp 0.6s ease-out',
+                        'parallax': 'parallax 20s linear infinite'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-inter bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-oxford-blue text-white px-4 py-2 rounded-md z-50">
+        Skip to main content
+    </a>
+
+    <!-- Header -->
+    <header class="bg-white dark:bg-gray-900 shadow-lg sticky top-0 z-40 transition-all duration-300">
+        <div class="container mx-auto px-4">
+            <!-- Top Bar -->
+            <div class="border-b border-gray-200 dark:border-gray-700 py-2">
+                <div class="flex justify-between items-center text-sm">
+                    <div class="flex items-center space-x-6">
+                        <a href="mailto:info@habibcollege.edu" class="text-oxford-blue dark:text-blue-400 hover:text-navy-blue transition-colors">
+                            <i class="fas fa-envelope mr-2"></i>info@habibcollege.edu
+                        </a>
+                        <a href="tel:+1234567890" class="text-oxford-blue dark:text-blue-400 hover:text-navy-blue transition-colors">
+                            <i class="fas fa-phone mr-2"></i>+1 (234) 567-8900
+                        </a>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <!-- Social Media Links -->
+                        <a href="#" class="text-oxford-blue dark:text-blue-400 hover:text-navy-blue transition-colors">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-oxford-blue dark:text-blue-400 hover:text-navy-blue transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-oxford-blue dark:text-blue-400 hover:text-navy-blue transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-oxford-blue dark:text-blue-400 hover:text-navy-blue transition-colors">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        
+                        <!-- Theme Toggle -->
+                        <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+                            <i class="fas fa-sun text-yellow-500 dark:hidden"></i>
+                            <i class="fas fa-moon text-blue-400 hidden dark:block"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Navigation -->
+            <nav class="py-4">
+                <div class="flex justify-between items-center">
+                    <!-- Logo -->
+                    <a href="index.html" class="flex items-center space-x-3">
+                        <div class="w-12 h-12 bg-oxford-blue text-white rounded-full flex items-center justify-center">
+                            <i class="fas fa-graduation-cap text-xl"></i>
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-playfair font-bold text-oxford-blue dark:text-white">Habib College</h1>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">Excellence in Education</p>
+                        </div>
+                    </a>
+
+                    <!-- Desktop Navigation -->
+                    <ul class="hidden lg:flex space-x-8">
+                        <li><a href="index.html" class="nav-link active">Home</a></li>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li><a href="programs.html" class="nav-link">Programs</a></li>
+                        <li><a href="faculty.html" class="nav-link">Faculty</a></li>
+                        <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+                        <li><a href="news.html" class="nav-link">News</a></li>
+                        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-toggle" class="lg:hidden p-2">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+
+                <!-- Mobile Navigation -->
+                <div id="mobile-menu" class="lg:hidden hidden mt-4 border-t border-gray-200 dark:border-gray-700 pt-4">
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+                        <li><a href="about.html" class="mobile-nav-link">About</a></li>
+                        <li><a href="programs.html" class="mobile-nav-link">Programs</a></li>
+                        <li><a href="faculty.html" class="mobile-nav-link">Faculty</a></li>
+                        <li><a href="admissions.html" class="mobile-nav-link">Admissions</a></li>
+                        <li><a href="news.html" class="mobile-nav-link">News</a></li>
+                        <li><a href="gallery.html" class="mobile-nav-link">Gallery</a></li>
+                        <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="relative h-screen flex items-center justify-center overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-r from-oxford-blue/80 to-navy-blue/80 z-10"></div>
+            <div class="absolute inset-0 parallax-bg" style="background-image: url('https://pixabay.com/get/gefd62a304e94f555c2239eb4c24851f4118c32fd21fb826234819e80fa367db495ca2ceedb3c47e8ea5ce8fabf22f12c573d2d3bffac4799a5dfae863409ea22_1280.jpg'); background-size: cover; background-position: center;"></div>
+            
+            <div class="relative z-20 text-center text-white px-4 max-w-4xl">
+                <h1 class="text-5xl md:text-7xl font-playfair font-bold mb-6 animate-fade-in">
+                    Welcome to <span class="text-gold-accent">Habib College</span>
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 animate-slide-up font-crimson">
+                    Where Excellence Meets Innovation in Higher Education
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up">
+                    <a href="admissions.html" class="btn-primary">
+                        Apply Now
+                    </a>
+                    <a href="programs.html" class="btn-secondary">
+                        Explore Programs
+                    </a>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+                <div class="animate-bounce">
+                    <i class="fas fa-chevron-down text-white text-2xl"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Stats -->
+        <section class="py-16 bg-oxford-blue dark:bg-gray-800">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div class="text-center text-white">
+                        <div class="text-4xl font-bold text-gold-accent mb-2">15,000+</div>
+                        <div class="text-sm uppercase tracking-wide">Students</div>
+                    </div>
+                    <div class="text-center text-white">
+                        <div class="text-4xl font-bold text-gold-accent mb-2">500+</div>
+                        <div class="text-sm uppercase tracking-wide">Faculty</div>
+                    </div>
+                    <div class="text-center text-white">
+                        <div class="text-4xl font-bold text-gold-accent mb-2">100+</div>
+                        <div class="text-sm uppercase tracking-wide">Programs</div>
+                    </div>
+                    <div class="text-center text-white">
+                        <div class="text-4xl font-bold text-gold-accent mb-2">50+</div>
+                        <div class="text-sm uppercase tracking-wide">Years</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="py-20 bg-gray-50 dark:bg-gray-800">
+            <div class="container mx-auto px-4">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-16">
+                        <h2 class="text-4xl md:text-5xl font-playfair font-bold mb-6 text-oxford-blue dark:text-white">
+                            About Habib College
+                        </h2>
+                        <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+                            For over five decades, Habib College has been at the forefront of higher education, 
+                            nurturing minds and shaping futures through academic excellence and innovation.
+                        </p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-12 items-center">
+                        <div class="space-y-6">
+                            <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md">
+                                <h3 class="text-xl font-semibold mb-3 text-oxford-blue dark:text-white">
+                                    <i class="fas fa-bullseye text-gold-accent mr-3"></i>
+                                    Our Mission
+                                </h3>
+                                <p class="text-gray-600 dark:text-gray-300">
+                                    To provide world-class education that empowers students to become leaders, 
+                                    innovators, and responsible global citizens.
+                                </p>
+                            </div>
+
+                            <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md">
+                                <h3 class="text-xl font-semibold mb-3 text-oxford-blue dark:text-white">
+                                    <i class="fas fa-eye text-gold-accent mr-3"></i>
+                                    Our Vision
+                                </h3>
+                                <p class="text-gray-600 dark:text-gray-300">
+                                    To be recognized as a premier institution that transforms lives through 
+                                    exceptional education, research, and community engagement.
+                                </p>
+                            </div>
+
+                            <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md">
+                                <h3 class="text-xl font-semibold mb-3 text-oxford-blue dark:text-white">
+                                    <i class="fas fa-heart text-gold-accent mr-3"></i>
+                                    Our Values
+                                </h3>
+                                <p class="text-gray-600 dark:text-gray-300">
+                                    Excellence, Integrity, Innovation, Diversity, and Service to humanity 
+                                    guide everything we do.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4">
+                            <img src="https://pixabay.com/get/g6effe29f02badfc6a01b259baaaed70bb39075177373b4b451b80dd0dc217a42927e3130956cfeeee6556f1e6c02b63eb9887ec674801ded1cf88091fe1196c7_1280.jpg" 
+                                 alt="Students studying" 
+                                 class="rounded-lg shadow-md w-full h-48 object-cover">
+                            <img src="https://pixabay.com/get/gd4cb7e93b6e4af3f36e12640121bb991fc1b5e4c1a84ab295b96afa2656764a7ec1603f744cada2769e53308c7721c05c2600aaaf05b24e99c5338b13165ab8d_1280.jpg" 
+                                 alt="Modern facilities" 
+                                 class="rounded-lg shadow-md w-full h-48 object-cover">
+                            <img src="https://pixabay.com/get/g83518ca8a8ee4cf5af1964635e4f10fab23d943c71afeda1402a5f9c4823451626ff6a6185832a90fe288d0eb16f165b94b924d51d30f7aa0038718d6c971bc1_1280.jpg" 
+                                 alt="Library" 
+                                 class="rounded-lg shadow-md w-full h-48 object-cover">
+                            <img src="https://pixabay.com/get/g832bb3261edb99b6b280fa766e9ae478bfe561f9033d548cb2b2f79a5e38f805daabb2082c672708ce3884d8103d9eece73d3a5acebab2cee0da96b72d6a0024_1280.jpg" 
+                                 alt="Faculty teaching" 
+                                 class="rounded-lg shadow-md w-full h-48 object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Programs Section -->
+        <section class="py-20 bg-white dark:bg-gray-900">
+            <div class="container mx-auto px-4">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-16">
+                        <h2 class="text-4xl md:text-5xl font-playfair font-bold mb-6 text-oxford-blue dark:text-white">
+                            Academic Programs
+                        </h2>
+                        <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+                            Discover our comprehensive range of undergraduate and graduate programs 
+                            designed to prepare you for success in your chosen field.
+                        </p>
+                    </div>
+
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                            <div class="text-center">
+                                <div class="w-16 h-16 bg-oxford-blue text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <i class="fas fa-laptop-code text-2xl"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-4 text-oxford-blue dark:text-white">
+                                    Computer Science
+                                </h3>
+                                <p class="text-gray-600 dark:text-gray-300 mb-6">
+                                    Cutting-edge programs in software engineering, AI, cybersecurity, 
+                                    and data science.
+                                </p>
+                                <a href="programs.html" class="btn-primary">Learn More</a>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                            <div class="text-center">
+                                <div class="w-16 h-16 bg-oxford-blue text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <i class="fas fa-flask text-2xl"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-4 text-oxford-blue dark:text-white">
+                                    Engineering
+                                </h3>
+                                <p class="text-gray-600 dark:text-gray-300 mb-6">
+                                    Comprehensive engineering programs including mechanical, electrical, 
+                                    and civil engineering.
+                                </p>
+                                <a href="programs.html" class="btn-primary">Learn More</a>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                            <div class="text-center">
+                                <div class="w-16 h-16 bg-oxford-blue text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <i class="fas fa-chart-line text-2xl"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-4 text-oxford-blue dark:text-white">
+                                    Business
+                                </h3>
+                                <p class="text-gray-600 dark:text-gray-300 mb-6">
+                                    MBA and undergraduate business programs with focus on entrepreneurship 
+                                    and leadership.
+                                </p>
+                                <a href="programs.html" class="btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section class="py-20 bg-gray-50 dark:bg-gray-800">
+            <div class="container mx-auto px-4">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-16">
+                        <h2 class="text-4xl md:text-5xl font-playfair font-bold mb-6 text-oxford-blue dark:text-white">
+                            Latest News
+                        </h2>
+                        <p class="text-xl text-gray-600 dark:text-gray-300">
+                            Stay updated with the latest happenings at Habib College
+                        </p>
+                    </div>
+
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <article class="bg-white dark:bg-gray-900 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+                            <img src="https://pixabay.com/get/g3d91b2df29aa7f286c7d3c9c685a114ec9a1b98fc3053712585c60e18d05cfd3123db58d2e46532e0a73e1e1b6c7e3c3ad552f203384a1a9217fce3e7ad8d19f_1280.jpg" 
+                                 alt="Graduation ceremony" 
+                                 class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <div class="text-sm text-oxford-blue dark:text-blue-400 mb-2">
+                                    <i class="fas fa-calendar mr-2"></i>
+                                    December 15, 2024
+                                </div>
+                                <h3 class="text-xl font-semibold mb-3 text-oxford-blue dark:text-white">
+                                    Annual Convocation Ceremony
+                                </h3>
+                                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                                    Celebrating the achievements of our graduating class of 2024 
+                                    with distinguished guests and proud families.
+                                </p>
+                                <a href="news.html" class="text-oxford-blue dark:text-blue-400 hover:underline">
+                                    Read More <i class="fas fa-arrow-right ml-1"></i>
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="bg-white dark:bg-gray-900 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+                            <img src="https://pixabay.com/get/g58cb10c0030f2ab41045da4f51753b9733e4a00c21da556718d4f3ff57ba7ed7c005bc7c888feead42628f5658d936c3b1b81d8482a02c19ac48bcaa8862519a_1280.jpg" 
+                                 alt="New research facility" 
+                                 class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <div class="text-sm text-oxford-blue dark:text-blue-400 mb-2">
+                                    <i class="fas fa-calendar mr-2"></i>
+                                    November 28, 2024
+                                </div>
+                                <h3 class="text-xl font-semibold mb-3 text-oxford-blue dark:text-white">
+                                    New Research Center Opens
+                                </h3>
+                                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                                    State-of-the-art research facility for advanced studies in 
+                                    artificial intelligence and biotechnology.
+                                </p>
+                                <a href="news.html" class="text-oxford-blue dark:text-blue-400 hover:underline">
+                                    Read More <i class="fas fa-arrow-right ml-1"></i>
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="bg-white dark:bg-gray-900 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+                            <img src="https://pixabay.com/get/ge80b8adc0e9aabe4e1dc4cd760c2a34355b29073fd895f0172b4a4655a4e975b23df595e91d34c03f0c3f0c83c71a10a2d3187500cea5adaf14ec5592194ecd0_1280.jpg" 
+                                 alt="Student activities" 
+                                 class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <div class="text-sm text-oxford-blue dark:text-blue-400 mb-2">
+                                    <i class="fas fa-calendar mr-2"></i>
+                                    November 20, 2024
+                                </div>
+                                <h3 class="text-xl font-semibold mb-3 text-oxford-blue dark:text-white">
+                                    Student Innovation Challenge
+                                </h3>
+                                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                                    Annual competition showcasing student creativity and 
+                                    problem-solving skills across all disciplines.
+                                </p>
+                                <a href="news.html" class="text-oxford-blue dark:text-blue-400 hover:underline">
+                                    Read More <i class="fas fa-arrow-right ml-1"></i>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="py-20 bg-oxford-blue dark:bg-gray-900">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-4xl md:text-5xl font-playfair font-bold mb-16 text-white">
+                        What Our Students Say
+                    </h2>
+
+                    <div class="testimonial-slider">
+                        <div class="testimonial-slide active">
+                            <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-xl">
+                                <div class="text-6xl text-gold-accent mb-4">"</div>
+                                <p class="text-xl text-gray-700 dark:text-gray-300 mb-6 italic">
+                                    Habib College provided me with not just knowledge, but the confidence 
+                                    to pursue my dreams. The faculty's dedication and support made all the difference.
+                                </p>
+                                <div class="flex items-center justify-center">
+                                    <div class="text-center">
+                                        <h4 class="font-semibold text-oxford-blue dark:text-white">Sarah Ahmed</h4>
+                                        <p class="text-gray-600 dark:text-gray-400">Computer Science Graduate</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="py-20 bg-white dark:bg-gray-800">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-4xl md:text-5xl font-playfair font-bold mb-6 text-oxford-blue dark:text-white">
+                    Ready to Begin Your Journey?
+                </h2>
+                <p class="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
+                    Take the first step towards your future. Join thousands of students who have 
+                    chosen Habib College for their academic journey.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="admissions.html" class="btn-primary">
+                        Apply Now
+                    </a>
+                    <a href="contact.html" class="btn-secondary">
+                        Schedule a Visit
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- College Info -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-oxford-blue rounded-full flex items-center justify-center">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-playfair font-bold">Habib College</h3>
+                            <p class="text-sm text-gray-400">Excellence in Education</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        Empowering minds and shaping futures through world-class education 
+                        and innovative research.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="programs.html" class="text-gray-400 hover:text-white transition-colors">Academic Programs</a></li>
+                        <li><a href="admissions.html" class="text-gray-400 hover:text-white transition-colors">Admissions</a></li>
+                        <li><a href="faculty.html" class="text-gray-400 hover:text-white transition-colors">Faculty</a></li>
+                        <li><a href="news.html" class="text-gray-400 hover:text-white transition-colors">News & Events</a></li>
+                    </ul>
+                </div>
+
+                <!-- Student Resources -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Student Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Student Portal</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Library</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Career Services</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Campus Life</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Alumni Network</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Information</h4>
+                    <div class="space-y-3">
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-map-marker-alt text-oxford-blue mt-1"></i>
+                            <div>
+                                <p class="text-gray-400">123 Education Street</p>
+                                <p class="text-gray-400">Knowledge City, KC 12345</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-phone text-oxford-blue"></i>
+                            <p class="text-gray-400">+1 (234) 567-8900</p>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-envelope text-oxford-blue"></i>
+                            <p class="text-gray-400">info@habibcollege.edu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-gray-800 my-8">
+
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">
+                    © 2024 Habib College. All rights reserved.
+                </p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Cookie Policy</a>
+                </div>
+            </div>
+
+            <!-- Designer Credit -->
+            <div class="text-center mt-8 pt-4 border-t border-gray-800">
+                <p class="text-gray-400 text-sm">
+                    Website designed by <span class="text-gold-accent font-semibold">Habib college number 605</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/theme.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

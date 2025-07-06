@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Habib College</title>
+    <meta name="description" content="Get in touch with Habib College. Find our contact information, campus locations, and connect with our admissions, academic, and administrative departments.">
+    <meta name="keywords" content="Habib College, contact, address, phone, email, campus location, admissions office">
+    <meta name="author" content="Habib college number 605">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'oxford-blue': '#003366',
+                        'navy-blue': '#1e3a8a',
+                        'academic-green': '#2d5016',
+                        'gold-accent': '#d4af37',
+                        'cream': '#faf7f2'
+                    },
+                    fontFamily: {
+                        'playfair': ['Playfair Display', 'serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                        'crimson': ['Crimson Text', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-inter bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
+    <!-- Header -->
+    <header class="bg-white dark:bg-gray-900 shadow-lg sticky top-0 z-40 transition-all duration-300">
+        <div class="container mx-auto px-4">
+            <!-- Top Bar -->
+            <div class="border-b border-gray-200 dark:border-gray-700 py-2">
+                <div class="flex justify-between items-center text-sm">
+                    <div class="flex items-center space-x-6">
+                        <a href="mailto:info@habibcollege.edu" class="text-oxford-blue dark:text-blue-400 hover:text-navy-blue transition-colors">
+                            <i class="fas fa-envelope mr-2"></i>info@habibcollege.edu
+                        </a>
+                        <a href="tel:+1234567890" class="text-oxford-blue dark:text-blue-400 hover:text-navy-blue transition-colors">
+                            <i class="fas fa-phone mr-2"></i>+1 (234) 567-8900
+                        </a>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <a href="#" class="text-oxford-blue dark:text-blue-400 hover:text-navy-blue transition-colors">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-oxford-blue dark:text-blue-400 hover:text-navy-blue transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-oxford-blue dark:text-blue-400 hover:text-navy-blue transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-oxford-blue dark:text-blue-400 hover:text-navy-blue transition-colors">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+                            <i class="fas fa-sun text-yellow-500 dark:hidden"></i>
+                            <i class="fas fa-moon text-blue-400 hidden dark:block"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Navigation -->
+            <nav class="py-4">
+                <div class="flex justify-between items-center">
+                    <a href="index.html" class="flex items-center space-x-3">
+                        <div class="w-12 h-12 bg-oxford-blue text-white rounded-full flex items-center justify-center">
+                            <i class="fas fa-graduation-cap text-xl"></i>
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-playfair font-bold text-oxford-blue dark:text-white">Habib College</h1>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">Excellence in Education</p>
+                        </div>
+                    </a>
+
+                    <ul class="hidden lg:flex space-x-8">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li><a href="programs.html" class="nav-link">Programs</a></li>
+                        <li><a href="faculty.html" class="nav-link">Faculty</a></li>
+                        <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+                        <li><a href="news.html" class="nav-link">News</a></li>
+                        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                    </ul>
+
+                    <button id="mobile-menu-toggle" class="lg:hidden p-2">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+
+                <div id="mobile-menu" class="lg:hidden hidden mt-4 border-t border-gray-200 dark:border-gray-700 pt-4">
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+                        <li><a href="about.html" class="mobile-nav-link">About</a></li>
+                        <li><a href="programs.html" class="mobile-nav-link">Programs</a></li>
+                        <li><a href="faculty.html" class="mobile-nav-link">Faculty</a></li>
+                        <li><a href="admissions.html" class="mobile-nav-link">Admissions</a></li>
+                        <li><a href="news.html" class="mobile-nav-link">News</a></li>
+                        <li><a href="gallery.html" class="mobile-nav-link">Gallery</a></li>
+                        <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Breadcrumb -->
+        <nav class="bg-gray-50 dark:bg-gray-800 py-4">
+            <div class="container mx-auto px-4">
+                <ol class="flex items-center space-x-2 text-sm">
+                    <li><a href="index.html" class="text-oxford-blue dark:text-blue-400 hover:underline">Home</a></li>
+                    <li><i class="fas fa-chevron-right text-gray-400"></i></li>
+                    <li class="text-gray-600 dark:text-gray-400">Contact</li>
+                </ol>
+            </div>
+        </nav>
+
+        <!-- Page Header -->
+        <section class="relative py-20 bg-gradient-to-r from-oxford-blue to-navy-blue text-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center">
+                    <h1 class="text-4xl md:text-6xl font-playfair font-bold mb-4">Contact Us</h1>
+                    <p class="text-xl md:text-2xl font-crimson">We're Here to Help</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Information -->
+        <section class="py-20 bg-white dark:bg-gray-900">
+            <div class="container mx-auto px-4">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-16">
+                        <h2 class="text-3xl md:text-4xl font-playfair font-bold mb-6 text-oxford-blue dark:text-white">
+                            Get in Touch
+                        </h2>
+                        <p class="text-xl text-gray-600 dark:text-gray-300">
+                            Contact our various departments for specific inquiries
+                        </p>
+                    </div>
+
+                    <div class="grid md:grid-cols-3 gap-8 mb-16">
+                        <!-- General Information -->
+                        <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg text-center">
+                            <div class="w-16 h-16 bg-oxford-blue text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-info-circle text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-4 text-oxford-blue dark:text-white">General Information</h3>
+                            <div class="space-y-3">
+                                <div class="flex items-center justify-center">
+                                    <i class="fas fa-phone text-oxford-blue mr-3"></i>
+                                    <span class="text-gray-600 dark:text-gray-300">+1 (234) 567-8900</span>
+                                </div>
+                                <div class="flex items-center justify-center">
+                                    <i class="fas fa-envelope text-oxford-blue mr-3"></i>
+                                    <span class="text-gray-600 dark:text-gray-300">info@habibcollege.edu</span>
+                                </div>
+                                <div class="text-sm text-gray-500 dark:text-gray-400">
+                                    Mon-Fri: 8:00 AM - 6:00 PM
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Admissions Office -->
+                        <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg text-center">
+                            <div class="w-16 h-16 bg-oxford-blue text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-user-graduate text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-4 text-oxford-blue dark:text-white">Admissions Office</h3>
+                            <div class="space-y-3">
+                                <div class="flex items-center justify-center">
+                                    <i class="fas fa-phone text-oxford-blue mr-3"></i>
+                                    <span class="text-gray-600 dark:text-gray-300">+1 (234) 567-8901</span>
+                                </div>
+                                <div class="flex items-center justify-center">
+                                    <i class="fas fa-envelope text-oxford-blue mr-3"></i>
+                                    <span class="text-gray-600 dark:text-gray-300">admissions@habibcollege.edu</span>
+                                </div>
+                                <div class="text-sm text-gray-500 dark:text-gray-400">
+                                    Mon-Fri: 9:00 AM - 5:00 PM
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Academic Affairs -->
+                        <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg text-center">
+                            <div class="w-16 h-16 bg-oxford-blue text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-book text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-4 text-oxford-blue dark:text-white">Academic Affairs</h3>
+                            <div class="space-y-3">
+                                <div class="flex items-center justify-center">
+                                    <i class="fas fa-phone text-oxford-blue mr-3"></i>
+                                    <span class="text-gray-600 dark:text-gray-300">+1 (234) 567-8902</span>
+                                </div>
+                                <div class="flex items-center justify-center">
+                                    <i class="fas fa-envelope text-oxford-blue mr-3"></i>
+                                    <span class="text-gray-600 dark:text-gray-300">academic@habibcollege.edu</span>
+                                </div>
+                                <div class="text-sm text-gray-500 dark:text-gray-400">
+                                    Mon-Fri: 8:30 AM - 5:30 PM
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="py-20 bg-gray-50 dark:bg-gray-800">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <div class="text-center mb-16">
+                        <h2 class="text-3xl md:text-4xl font-playfair font-bold mb-6 text-oxford-blue dark:text-white">
+                            Send Us a Message
+                        </h2>
+                        <p class="text-xl text-gray-600 dark:text-gray-300">
+                            Have a question? We'd love to hear from you
+                        </p>
+                    </div>
+
+                    <div class="bg-white dark:bg-gray-900 rounded-lg shadow-lg p-8">
+                        <form id="contact-form" class="space-y-6">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="firstName" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                                        First Name *
+                                    </label>
+                                    <input type="text" id="firstName" name="firstName" required
+                                           class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-oxford-blue dark:bg-gray-800 dark:text-white">
+                                </div>
+                                <div>
+                                    <label for="lastName" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                                        Last Name *
+                                    </label>
+                                    <input type="text" id="lastName" name="lastName" required
+                                           class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-oxford-blue dark:bg-gray-800 dark:text-white">
+                                </div>
+                            </div>
+
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                                        Email Address *
+                                    </label>
+                                    <input type="email" id="email" name="email" required
+                                           class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-oxford-blue dark:bg-gray-800 dark:text-white">
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                                        Phone Number
+                                    </label>
+                                    <input type="tel" id="phone" name="phone"
+                                           class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-oxford-blue dark:bg-gray-800 dark:text-white">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="subject" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                                    Subject *
+                                </label>
+                                <select id="subject" name="subject" required
+                                        class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-oxford-blue dark:bg-gray-800 dark:text-white">
+                                    <option value="">Select a subject</option>
+                                    <option value="admissions">Admissions Inquiry</option>
+                                    <option value="academic">Academic Information</option>
+                                    <option value="financial">Financial Aid</option>
+                                    <option value="campus">Campus Visit</option>
+                                    <option value="general">General Question</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                                    Message *
+                                </label>
+                                <textarea id="message" name="message" rows="6" required
+                                          placeholder="Please provide details about your inquiry..."
+                                          class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-oxford-blue dark:bg-gray-800 dark:text-white resize-vertical"></textarea>
+                            </div>
+
+                            <div class="flex items-center">
+                                <input type="checkbox" id="consent" name="consent" required
+                                       class="h-4 w-4 text-oxford-blue focus:ring-oxford-blue border-gray-300 rounded">
+                                <label for="consent" class="ml-3 text-sm text-gray-700 dark:text-gray-300">
+                                    I agree to the <a href="#" class="text-oxford-blue dark:text-blue-400 hover:underline">Privacy Policy</a> 
+                                    and consent to being contacted by Habib College. *
+                                </label>
+                            </div>
+
+                            <div class="text-center">
+                                <button type="submit" 
+                                        class="bg-oxford-blue hover:bg-navy-blue text-white font-semibold px-8 py-3 rounded-lg transition-colors">
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Campus Location -->
+        <section class="py-20 bg-white dark:bg-gray-900">
+            <div class="container mx-auto px-4">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-16">
+                        <h2 class="text-3xl md:text-4xl font-playfair font-bold mb-6 text-oxford-blue dark:text-white">
+                            Visit Our Campus
+                        </h2>
+                        <p class="text-xl text-gray-600 dark:text-gray-300">
+                            Come and experience our beautiful campus firsthand
+                        </p>
+                    </div>
+
+                    <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-6 text-oxford-blue dark:text-white">
+                                Campus Address
+                            </h3>
+                            <div class="space-y-4 mb-8">
+                                <div class="flex items-start space-x-3">
+                                    <i class="fas fa-map-marker-alt text-oxford-blue mt-1"></i>
+                                    <div>
+                                        <p class="font-semibold text-gray-900 dark:text-white">Habib College</p>
+                                        <p class="text-gray-600 dark:text-gray-300">123 Education Street</p>
+                                        <p class="text-gray-600 dark:text-gray-300">Knowledge City, KC 12345</p>
+                                        <p class="text-gray-600 dark:text-gray-300">United States</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <i class="fas fa-phone text-oxford-blue"></i>
+                                    <span class="text-gray-600 dark:text-gray-300">+1 (234) 567-8900</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <i class="fas fa-envelope text-oxford-blue"></i>
+                                    <span class="text-gray-600 dark:text-gray-300">info@habibcollege.edu</span>
+                                </div>
+                            </div>
+
+                            <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg">
+                                <h4 class="text-lg font-semibold mb-4 text-oxford-blue dark:text-white">
+                                    Campus Hours
+                                </h4>
+                                <div class="space-y-2 text-sm">
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-600 dark:text-gray-300">Monday - Friday</span>
+                                        <span class="font-semibold text-gray-900 dark:text-white">8:00 AM - 6:00 PM</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-600 dark:text-gray-300">Saturday</span>
+                                        <span class="font-semibold text-gray-900 dark:text-white">9:00 AM - 4:00 PM</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-600 dark:text-gray-300">Sunday</span>
+                                        <span class="font-semibold text-gray-900 dark:text-white">Closed</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-200 dark:bg-gray-800 rounded-lg h-96 flex items-center justify-center">
+                            <div class="text-center">
+                                <i class="fas fa-map text-6xl text-oxford-blue mb-4"></i>
+                                <p class="text-xl font-semibold text-oxford-blue dark:text-white mb-2">Interactive Campus Map</p>
+                                <p class="text-gray-600 dark:text-gray-300">
+                                    Explore our campus facilities and find your way around
+                                </p>
+                                <button class="mt-4 bg-oxford-blue hover:bg-navy-blue text-white px-6 py-2 rounded-lg transition-colors">
+                                    View Full Map
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Links -->
+        <section class="py-20 bg-gray-50 dark:bg-gray-800">
+            <div class="container mx-auto px-4">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-16">
+                        <h2 class="text-3xl md:text-4xl font-playfair font-bold mb-6 text-oxford-blue dark:text-white">
+                            Quick Links
+                        </h2>
+                        <p class="text-xl text-gray-600 dark:text-gray-300">
+                            Find what you're looking for quickly
+                        </p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <a href="admissions.html" class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow text-center group">
+                            <div class="w-12 h-12 bg-oxford-blue text-white rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-navy-blue transition-colors">
+                                <i class="fas fa-user-graduate"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold mb-2 text-oxford-blue dark:text-white">Apply Now</h3>
+                            <p class="text-gray-600 dark:text-gray-300 text-sm">Start your application process</p>
+                        </a>
+
+                        <a href="programs.html" class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow text-center group">
+                            <div class="w-12 h-12 bg-oxford-blue text-white rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-navy-blue transition-colors">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold mb-2 text-oxford-blue dark:text-white">Academic Programs</h3>
+                            <p class="text-gray-600 dark:text-gray-300 text-sm">Explore our degree offerings</p>
+                        </a>
+
+                        <a href="#" class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow text-center group">
+                            <div class="w-12 h-12 bg-oxford-blue text-white rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-navy-blue transition-colors">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold mb-2 text-oxford-blue dark:text-white">Schedule Visit</h3>
+                            <p class="text-gray-600 dark:text-gray-300 text-sm">Book a campus tour</p>
+                        </a>
+
+                        <a href="#" class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow text-center group">
+                            <div class="w-12 h-12 bg-oxford-blue text-white rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-navy-blue transition-colors">
+                                <i class="fas fa-question-circle"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold mb-2 text-oxford-blue dark:text-white">FAQ</h3>
+                            <p class="text-gray-600 dark:text-gray-300 text-sm">Find answers to common questions</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Media -->
+        <section class="py-20 bg-oxford-blue dark:bg-gray-900">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-playfair font-bold mb-6 text-white">
+                    Connect With Us
+                </h2>
+                <p class="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
+                    Follow us on social media for the latest updates and campus news
+                </p>
+                <div class="flex justify-center space-x-6">
+                    <a href="#" class="bg-white text-oxford-blue w-12 h-12 rounded-full flex items-center justify-center hover:bg-gray-100 transition-colors">
+                        <i class="fab fa-facebook text-xl"></i>
+                    </a>
+                    <a href="#" class="bg-white text-oxford-blue w-12 h-12 rounded-full flex items-center justify-center hover:bg-gray-100 transition-colors">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="bg-white text-oxford-blue w-12 h-12 rounded-full flex items-center justify-center hover:bg-gray-100 transition-colors">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="#" class="bg-white text-oxford-blue w-12 h-12 rounded-full flex items-center justify-center hover:bg-gray-100 transition-colors">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                    <a href="#" class="bg-white text-oxford-blue w-12 h-12 rounded-full flex items-center justify-center hover:bg-gray-100 transition-colors">
+                        <i class="fab fa-youtube text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-oxford-blue rounded-full flex items-center justify-center">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-playfair font-bold">Habib College</h3>
+                            <p class="text-sm text-gray-400">Excellence in Education</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        Empowering minds and shaping futures through world-class education 
+                        and innovative research.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="programs.html" class="text-gray-400 hover:text-white transition-colors">Academic Programs</a></li>
+                        <li><a href="admissions.html" class="text-gray-400 hover:text-white transition-colors">Admissions</a></li>
+                        <li><a href="faculty.html" class="text-gray-400 hover:text-white transition-colors">Faculty</a></li>
+                        <li><a href="news.html" class="text-gray-400 hover:text-white transition-colors">News & Events</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Student Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Student Portal</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Library</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Career Services</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Campus Life</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Alumni Network</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Information</h4>
+                    <div class="space-y-3">
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-map-marker-alt text-oxford-blue mt-1"></i>
+                            <div>
+                                <p class="text-gray-400">123 Education Street</p>
+                                <p class="text-gray-400">Knowledge City, KC 12345</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-phone text-oxford-blue"></i>
+                            <p class="text-gray-400">+1 (234) 567-8900</p>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-envelope text-oxford-blue"></i>
+                            <p class="text-gray-400">info@habibcollege.edu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-gray-800 my-8">
+
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">
+                    © 2024 Habib College. All rights reserved.
+                </p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Cookie Policy</a>
+                </div>
+            </div>
+
+            <div class="text-center mt-8 pt-4 border-t border-gray-800">
+                <p class="text-gray-400 text-sm">
+                    Website designed by <span class="text-gold-accent font-semibold">Habib college number 605</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/theme.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+    
+    <script>
+        // Contact form handling
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('contact-form');
+            
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Get form data
+                const formData = new FormData(form);
+                const data = Object.fromEntries(formData);
+                
+                // Validate required fields
+                const requiredFields = ['firstName', 'lastName', 'email', 'subject', 'message', 'consent'];
+                let isValid = true;
+                
+                requiredFields.forEach(field => {
+                    const element = document.getElementById(field);
+                    if (!element.value || (field === 'consent' && !element.checked)) {
+                        element.classList.add('border-red-500');
+                        isValid = false;
+                    } else {
+                        element.classList.remove('border-red-500');
+                    }
+                });
+                
+                if (isValid) {
+                    // Show success message
+                    alert('Thank you for your message! We will get back to you soon.');
+                    form.reset();
+                } else {
+                    alert('Please fill in all required fields.');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
