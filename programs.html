@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Programs - Habib College</title>
+    <meta name="description" content="Explore our comprehensive range of undergraduate and graduate programs at Habib College. Find your perfect academic path.">
+    <meta name="keywords" content="Habib College, academic programs, undergraduate, graduate, degrees, courses">
+    <meta name="author" content="Habib college number 605">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'oxford-blue': '#003366',
+                        'navy-blue': '#1e3a8a',
+                        'academic-green': '#2d5016',
+                        'gold-accent': '#d4af37',
+                        'cream': '#faf7f2'
+                    },
+                    fontFamily: {
+                        'playfair': ['Playfair Display', 'serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                        'crimson': ['Crimson Text', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-inter bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
+    <!-- Header -->
+    <header class="header-blur shadow-lg transition-all duration-300">
+        <div class="container mx-auto px-3 sm:px-4 lg:px-6">
+            
+            <!-- Top Bar - Responsive -->
+            <div class="border-b border-gray-200 dark:border-gray-700 py-1.5 sm:py-2">
+                <div class="flex justify-between items-center text-xs sm:text-sm">
+                    
+                    <!-- Contact Information - Responsive -->
+                    <div class="flex items-center space-x-2 sm:space-x-4 lg:space-x-6">
+                        <!-- Email - Hidden on xs, visible from sm -->
+                        <a href="mailto:info@habibcollege.edu" 
+                           class="hidden sm:flex items-center text-oxford-blue dark:text-blue-400 hover:text-navy-blue transition-colors group">
+                            <i class="fas fa-envelope mr-1 sm:mr-2 text-xs sm:text-sm group-hover:scale-110 transition-transform"></i>
+                            <span class="hidden md:inline">info@habibcollege.edu</span>
+                            <span class="md:hidden">Email</span>
+                        </a>
+                        
+                        <!-- Phone - Responsive display -->
+                        <a href="tel:+0963519355" 
+                           class="flex items-center text-oxford-blue dark:text-blue-400 hover:text-navy-blue transition-colors group">
+                            <i class="fas fa-phone mr-1 sm:mr-2 text-xs sm:text-sm group-hover:scale-110 transition-transform"></i>
+                            <span class="hidden lg:inline">+0963 519355</span>
+                            <span class="hidden sm:inline lg:hidden">Call</span>
+                            <span class="sm:hidden">Call</span>
+                        </a>
+                    </div>
+                    
+                    <!-- Social Media & Theme Toggle - Responsive -->
+                    <div class="flex items-center space-x-2 sm:space-x-3">
+                        <!-- Social Media Links - Hidden on xs, shown from sm -->
+                        <div class="hidden sm:flex items-center space-x-2 lg:space-x-3">
+                            <a href="#" 
+                               class="text-oxford-blue dark:text-blue-400 hover:text-navy-blue transition-all duration-200 hover:scale-110 p-1"
+                               aria-label="Facebook">
+                                <i class="fab fa-facebook text-sm lg:text-base"></i>
+                            </a>
+                            <a href="#" 
+                               class="text-oxford-blue dark:text-blue-400 hover:text-navy-blue transition-all duration-200 hover:scale-110 p-1"
+                               aria-label="Twitter">
+                                <i class="fab fa-twitter text-sm lg:text-base"></i>
+                            </a>
+                            <a href="#" 
+                               class="text-oxford-blue dark:text-blue-400 hover:text-navy-blue transition-all duration-200 hover:scale-110 p-1"
+                               aria-label="Instagram">
+                                <i class="fab fa-instagram text-sm lg:text-base"></i>
+                            </a>
+                            <a href="#" 
+                               class="text-oxford-blue dark:text-blue-400 hover:text-navy-blue transition-all duration-200 hover:scale-110 p-1"
+                               aria-label="LinkedIn">
+                                <i class="fab fa-linkedin text-sm lg:text-base"></i>
+                            </a>
+                        </div>
+                        
+                        <!-- Theme Toggle - Always visible with proper touch target -->
+                        <button id="theme-toggle" 
+                                class="p-2 sm:p-2.5 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
+                                aria-label="Toggle dark mode">
+                            <i class="fas fa-sun text-yellow-500 dark:hidden text-sm sm:text-base"></i>
+                            <i class="fas fa-moon text-blue-400 hidden dark:block text-sm sm:text-base"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sticky Navigation -->
+    <nav class="header-blur shadow-md sticky top-0 z-40 transition-all duration-300" role="navigation" aria-label="Main navigation">
+        <div class="container mx-auto px-3 sm:px-4 lg:px-6">
+            <div class="py-2 sm:py-3 lg:py-4">
+                <div class="flex justify-between items-center">
+                    
+                    <!-- Logo Section - Responsive -->
+                    <a href="index.html" class="flex items-center space-x-2 sm:space-x-3 group">
+                        <div class="w-10 h-10 sm:w-12 sm:h-12 bg-oxford-blue text-white rounded-full flex items-center justify-center group-hover:bg-navy-blue transition-colors">
+                            <i class="fas fa-graduation-cap text-lg sm:text-xl"></i>
+                        </div>
+                        <div class="min-w-0">
+                            <h1 class="text-lg sm:text-xl lg:text-2xl font-playfair font-bold text-oxford-blue dark:text-white truncate">
+                                Habib College
+                            </h1>
+                            <p class="text-xs sm:text-sm text-gray-600 dark:text-gray-400 truncate">
+                                Excellence in Education
+                            </p>
+                        </div>
+                    </a>
+
+                    <!-- Desktop Navigation - Hidden on mobile -->
+                    <ul class="hidden lg:flex items-center space-x-6 xl:space-x-8">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li><a href="programs.html" class="nav-link active">Programs</a></li>
+                        <li><a href="faculty.html" class="nav-link">Faculty</a></li>
+                        <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+                        <li><a href="news.html" class="nav-link">News</a></li>
+                        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+
+                    <!-- Mobile Controls -->
+                    <div class="lg:hidden flex items-center space-x-2">
+                        <!-- Theme Toggle for Mobile - Hidden by default -->
+                        <button id="theme-toggle-mobile" 
+                                class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors min-w-[44px] min-h-[44px] items-center justify-center hidden"
+                                aria-label="Toggle dark mode">
+                            <i class="fas fa-sun text-yellow-500 dark:hidden text-base"></i>
+                            <i class="fas fa-moon text-blue-400 hidden dark:block text-base"></i>
+                        </button>
+                        
+                        <!-- Mobile Menu Toggle -->
+                        <button id="mobile-menu-toggle" class="p-2">
+                            <i class="fas fa-bars text-2xl"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="mobile-menu" class="lg:hidden hidden mt-4 border-t border-gray-200 dark:border-gray-700 pt-4">
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+                        <li><a href="about.html" class="mobile-nav-link">About</a></li>
+                        <li><a href="programs.html" class="mobile-nav-link">Programs</a></li>
+                        <li><a href="faculty.html" class="mobile-nav-link">Faculty</a></li>
+                        <li><a href="admissions.html" class="mobile-nav-link">Admissions</a></li>
+                        <li><a href="news.html" class="mobile-nav-link">News</a></li>
+                        <li><a href="gallery.html" class="mobile-nav-link">Gallery</a></li>
+                        <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Breadcrumb -->
+        <nav class="bg-gray-50 dark:bg-gray-800 py-4">
+            <div class="container mx-auto px-4">
+                <ol class="flex items-center space-x-2 text-sm">
+                    <li><a href="index.html" class="text-oxford-blue dark:text-blue-400 hover:underline">Home</a></li>
+                    <li><i class="fas fa-chevron-right text-gray-400"></i></li>
+                    <li class="text-gray-600 dark:text-gray-400">Programs</li>
+                </ol>
+            </div>
+        </nav>
+
+        <!-- Page Header -->
+        <section class="relative py-20 bg-gradient-to-r from-oxford-blue to-navy-blue text-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center">
+                    <h1 class="text-4xl md:text-6xl font-playfair font-bold mb-4">Academic Programs</h1>
+                    <p class="text-xl md:text-2xl font-crimson">Discover Your Path to Excellence</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Program Categories -->
+        <section class="py-12 bg-white dark:bg-gray-900">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <div class="flex flex-wrap justify-center gap-4 mb-8">
+                        <button class="program-filter active px-6 py-3 bg-oxford-blue text-white rounded-lg hover:bg-navy-blue transition-colors" data-filter="all">
+                            All Programs
+                        </button>
+                        <button class="program-filter px-6 py-3 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-oxford-blue hover:text-white transition-colors" data-filter="undergraduate">
+                            Undergraduate
+                        </button>
+                        <button class="program-filter px-6 py-3 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-oxford-blue hover:text-white transition-colors" data-filter="graduate">
+                            Graduate
+                        </button>
+                        <button class="program-filter px-6 py-3 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-oxford-blue hover:text-white transition-colors" data-filter="doctoral">
+                            Doctoral
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Programs Grid -->
+        <section class="py-20 bg-gray-50 dark:bg-gray-800">
+            <div class="container mx-auto px-4">
+                <div class="max-w-6xl mx-auto">
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="programs-grid">
+                        <!-- Computer Science -->
+                        <div class="program-card bg-white dark:bg-gray-900 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow" data-category="undergraduate graduate">
+                            <div class="p-6">
+                                <div class="w-16 h-16 bg-oxford-blue text-white rounded-full flex items-center justify-center mb-4">
+                                    <i class="fas fa-laptop-code text-2xl"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-3 text-oxford-blue dark:text-white">Computer Science</h3>
+                                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                                    Cutting-edge programs in software engineering, artificial intelligence, cybersecurity, and data science.
+                                </p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs rounded-full">BS</span>
+                                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs rounded-full">MS</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm text-gray-500 dark:text-gray-400">4 Years</span>
+                                    <button class="text-oxford-blue dark:text-blue-400 hover:underline">Learn More</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Engineering -->
+                        <div class="program-card bg-white dark:bg-gray-900 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow" data-category="undergraduate graduate">
+                            <div class="p-6">
+                                <div class="w-16 h-16 bg-oxford-blue text-white rounded-full flex items-center justify-center mb-4">
+                                    <i class="fas fa-cogs text-2xl"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-3 text-oxford-blue dark:text-white">Engineering</h3>
+                                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                                    Comprehensive engineering programs including mechanical, electrical, civil, and chemical engineering.
+                                </p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-xs rounded-full">BE</span>
+                                    <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-xs rounded-full">ME</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm text-gray-500 dark:text-gray-400">4 Years</span>
+                                    <button class="text-oxford-blue dark:text-blue-400 hover:underline">Learn More</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Business Administration -->
+                        <div class="program-card bg-white dark:bg-gray-900 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow" data-category="undergraduate graduate">
+                            <div class="p-6">
+                                <div class="w-16 h-16 bg-oxford-blue text-white rounded-full flex items-center justify-center mb-4">
+                                    <i class="fas fa-chart-line text-2xl"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-3 text-oxford-blue dark:text-white">Business Administration</h3>
+                                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                                    Comprehensive business programs with focus on entrepreneurship, leadership, and global business.
+                                </p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 text-xs rounded-full">BBA</span>
+                                    <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 text-xs rounded-full">MBA</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm text-gray-500 dark:text-gray-400">4 Years</span>
+                                    <button class="text-oxford-blue dark:text-blue-400 hover:underline">Learn More</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Medicine -->
+                        <div class="program-card bg-white dark:bg-gray-900 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow" data-category="undergraduate graduate doctoral">
+                            <div class="p-6">
+                                <div class="w-16 h-16 bg-oxford-blue text-white rounded-full flex items-center justify-center mb-4">
+                                    <i class="fas fa-stethoscope text-2xl"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-3 text-oxford-blue dark:text-white">Medicine</h3>
+                                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                                    Comprehensive medical education programs preparing future healthcare professionals.
+                                </p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="px-3 py-1 bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 text-xs rounded-full">MBBS</span>
+                                    <span class="px-3 py-1 bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 text-xs rounded-full">MD</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm text-gray-500 dark:text-gray-400">5 Years</span>
+                                    <button class="text-oxford-blue dark:text-blue-400 hover:underline">Learn More</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Law -->
+                        <div class="program-card bg-white dark:bg-gray-900 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow" data-category="undergraduate graduate">
+                            <div class="p-6">
+                                <div class="w-16 h-16 bg-oxford-blue text-white rounded-full flex items-center justify-center mb-4">
+                                    <i class="fas fa-gavel text-2xl"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-3 text-oxford-blue dark:text-white">Law</h3>
+                                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                                    Comprehensive legal education with focus on constitutional law, corporate law, and international law.
+                                </p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 text-xs rounded-full">LLB</span>
+                                    <span class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 text-xs rounded-full">LLM</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm text-gray-500 dark:text-gray-400">5 Years</span>
+                                    <button class="text-oxford-blue dark:text-blue-400 hover:underline">Learn More</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Psychology -->
+                        <div class="program-card bg-white dark:bg-gray-900 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow" data-category="undergraduate graduate doctoral">
+                            <div class="p-6">
+                                <div class="w-16 h-16 bg-oxford-blue text-white rounded-full flex items-center justify-center mb-4">
+                                    <i class="fas fa-brain text-2xl"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-3 text-oxford-blue dark:text-white">Psychology</h3>
+                                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                                    Understanding human behavior and mental processes through scientific study and research.
+                                </p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 text-xs rounded-full">BS</span>
+                                    <span class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 text-xs rounded-full">MS</span>
+                                    <span class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 text-xs rounded-full">PhD</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm text-gray-500 dark:text-gray-400">4 Years</span>
+                                    <button class="text-oxford-blue dark:text-blue-400 hover:underline">Learn More</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mathematics -->
+                        <div class="program-card bg-white dark:bg-gray-900 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow" data-category="undergraduate graduate doctoral">
+                            <div class="p-6">
+                                <div class="w-16 h-16 bg-oxford-blue text-white rounded-full flex items-center justify-center mb-4">
+                                    <i class="fas fa-calculator text-2xl"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-3 text-oxford-blue dark:text-white">Mathematics</h3>
+                                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                                    Pure and applied mathematics with focus on problem-solving and analytical thinking.
+                                </p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="px-3 py-1 bg-teal-100 dark:bg-teal-900 text-teal-800 dark:text-teal-200 text-xs rounded-full">BS</span>
+                                    <span class="px-3 py-1 bg-teal-100 dark:bg-teal-900 text-teal-800 dark:text-teal-200 text-xs rounded-full">MS</span>
+                                    <span class="px-3 py-1 bg-teal-100 dark:bg-teal-900 text-teal-800 dark:text-teal-200 text-xs rounded-full">PhD</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm text-gray-500 dark:text-gray-400">4 Years</span>
+                                    <button class="text-oxford-blue dark:text-blue-400 hover:underline">Learn More</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Physics -->
+                        <div class="program-card bg-white dark:bg-gray-900 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow" data-category="undergraduate graduate doctoral">
+                            <div class="p-6">
+                                <div class="w-16 h-16 bg-oxford-blue text-white rounded-full flex items-center justify-center mb-4">
+                                    <i class="fas fa-atom text-2xl"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-3 text-oxford-blue dark:text-white">Physics</h3>
+                                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                                    Exploring the fundamental principles of matter, energy, and the universe through theoretical and experimental study.
+                                </p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="px-3 py-1 bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 text-xs rounded-full">BS</span>
+                                    <span class="px-3 py-1 bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 text-xs rounded-full">MS</span>
+                                    <span class="px-3 py-1 bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 text-xs rounded-full">PhD</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm text-gray-500 dark:text-gray-400">4 Years</span>
+                                    <button class="text-oxford-blue dark:text-blue-400 hover:underline">Learn More</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Economics -->
+                        <div class="program-card bg-white dark:bg-gray-900 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow" data-category="undergraduate graduate">
+                            <div class="p-6">
+                                <div class="w-16 h-16 bg-oxford-blue text-white rounded-full flex items-center justify-center mb-4">
+                                    <i class="fas fa-coins text-2xl"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-3 text-oxford-blue dark:text-white">Economics</h3>
+                                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                                    Understanding economic systems, markets, and policy through theoretical analysis and empirical research.
+                                </p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="px-3 py-1 bg-pink-100 dark:bg-pink-900 text-pink-800 dark:text-pink-200 text-xs rounded-full">BS</span>
+                                    <span class="px-3 py-1 bg-pink-100 dark:bg-pink-900 text-pink-800 dark:text-pink-200 text-xs rounded-full">MS</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm text-gray-500 dark:text-gray-400">4 Years</span>
+                                    <button class="text-oxford-blue dark:text-blue-400 hover:underline">Learn More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Program Features -->
+        <section class="py-20 bg-white dark:bg-gray-900">
+            <div class="container mx-auto px-4">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-16">
+                        <h2 class="text-3xl md:text-4xl font-playfair font-bold mb-6 text-oxford-blue dark:text-white">
+                            Why Choose Our Programs?
+                        </h2>
+                        <p class="text-xl text-gray-600 dark:text-gray-300">
+                            Discover what makes our academic programs exceptional
+                        </p>
+                    </div>
+
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-oxford-blue text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-chalkboard-teacher text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3 text-oxford-blue dark:text-white">Expert Faculty</h3>
+                            <p class="text-gray-600 dark:text-gray-300">
+                                Learn from industry experts and renowned academics who bring real-world experience to the classroom.
+                            </p>
+                        </div>
+
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-oxford-blue text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-microscope text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3 text-oxford-blue dark:text-white">Research Opportunities</h3>
+                            <p class="text-gray-600 dark:text-gray-300">
+                                Engage in cutting-edge research projects and contribute to advancing knowledge in your field.
+                            </p>
+                        </div>
+
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-oxford-blue text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-handshake text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3 text-oxford-blue dark:text-white">Industry Connections</h3>
+                            <p class="text-gray-600 dark:text-gray-300">
+                                Benefit from our strong partnerships with leading companies and organizations worldwide.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Admission Requirements -->
+        <section class="py-20 bg-gray-50 dark:bg-gray-800">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <div class="text-center mb-16">
+                        <h2 class="text-3xl md:text-4xl font-playfair font-bold mb-6 text-oxford-blue dark:text-white">
+                            Admission Requirements
+                        </h2>
+                        <p class="text-xl text-gray-600 dark:text-gray-300">
+                            General requirements for our academic programs
+                        </p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-md">
+                            <h3 class="text-xl font-semibold mb-4 text-oxford-blue dark:text-white">
+                                <i class="fas fa-graduation-cap text-oxford-blue mr-3"></i>
+                                Undergraduate Programs
+                            </h3>
+                            <ul class="space-y-3">
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-600 mr-3"></i>
+                                    <span class="text-gray-600 dark:text-gray-300">High School Diploma or equivalent</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-600 mr-3"></i>
+                                    <span class="text-gray-600 dark:text-gray-300">SAT/ACT scores</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-600 mr-3"></i>
+                                    <span class="text-gray-600 dark:text-gray-300">English proficiency test (TOEFL/IELTS)</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-600 mr-3"></i>
+                                    <span class="text-gray-600 dark:text-gray-300">Personal statement</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-600 mr-3"></i>
+                                    <span class="text-gray-600 dark:text-gray-300">Letters of recommendation</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-md">
+                            <h3 class="text-xl font-semibold mb-4 text-oxford-blue dark:text-white">
+                                <i class="fas fa-user-graduate text-oxford-blue mr-3"></i>
+                                Graduate Programs
+                            </h3>
+                            <ul class="space-y-3">
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-600 mr-3"></i>
+                                    <span class="text-gray-600 dark:text-gray-300">Bachelor's degree from accredited institution</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-600 mr-3"></i>
+                                    <span class="text-gray-600 dark:text-gray-300">GRE/GMAT scores (program dependent)</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-600 mr-3"></i>
+                                    <span class="text-gray-600 dark:text-gray-300">English proficiency test (TOEFL/IELTS)</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-600 mr-3"></i>
+                                    <span class="text-gray-600 dark:text-gray-300">Statement of purpose</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-600 mr-3"></i>
+                                    <span class="text-gray-600 dark:text-gray-300">Academic transcripts</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="py-20 bg-oxford-blue dark:bg-gray-900">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-playfair font-bold mb-6 text-white">
+                    Ready to Start Your Journey?
+                </h2>
+                <p class="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
+                    Take the first step towards your academic and professional goals. Apply to our programs today.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="admissions.html" class="bg-gold-accent hover:bg-yellow-600 text-oxford-blue font-semibold px-8 py-3 rounded-lg transition-colors">
+                        Apply Now
+                    </a>
+                    <a href="contact.html" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-oxford-blue font-semibold px-8 py-3 rounded-lg transition-colors">
+                        Get More Information
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-oxford-blue rounded-full flex items-center justify-center">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-playfair font-bold">Habib College</h3>
+                            <p class="text-sm text-gray-400">Excellence in Education</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        Empowering minds and shaping futures through world-class education 
+                        and innovative research.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="programs.html" class="text-gray-400 hover:text-white transition-colors">Academic Programs</a></li>
+                        <li><a href="admissions.html" class="text-gray-400 hover:text-white transition-colors">Admissions</a></li>
+                        <li><a href="faculty.html" class="text-gray-400 hover:text-white transition-colors">Faculty</a></li>
+                        <li><a href="news.html" class="text-gray-400 hover:text-white transition-colors">News & Events</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Student Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Student Portal</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Library</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Career Services</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Campus Life</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Alumni Network</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Information</h4>
+                    <div class="space-y-3">
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-map-marker-alt text-oxford-blue mt-1"></i>
+                            <div>
+                                <p class="text-gray-400">123 Education Street</p>
+                                <p class="text-gray-400">Knowledge City, KC 12345</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-phone text-oxford-blue"></i>
+                            <p class="text-gray-400">+1 (234) 567-8900</p>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-envelope text-oxford-blue"></i>
+                            <p class="text-gray-400">info@habibcollege.edu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-gray-800 my-8">
+
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">
+                    © 2024 Habib College. All rights reserved.
+                </p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Cookie Policy</a>
+                </div>
+            </div>
+
+            <div class="text-center mt-8 pt-4 border-t border-gray-800">
+                <p class="text-gray-400 text-sm">
+                    This Website designed by
+                    <span class="text-gold-accent font-semibold"
+                      >Cadet Habib ur Rehman College Number 605 </span
+                    ><a
+                      class="underline"
+                      target="_blank"
+                      href="https://habib605.netlify.app"
+                      >Web Site</a
+                    >
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/simple-mobile-menu.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+    
+    <style>
+    /* Enhanced backdrop blur with fallback */
+    .header-blur {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .dark .header-blur {
+        background: rgba(17, 24, 39, 0.8);
+        border-bottom: 1px solid rgba(55, 65, 81, 0.3);
+    }
+    
+    @supports not (backdrop-filter: blur(12px)) {
+        .header-blur {
+            background: rgba(255, 255, 255, 0.95);
+        }
+        .dark .header-blur {
+            background: rgba(17, 24, 39, 0.95);
+        }
+    }
+    #mobile-menu-toggle:focus {
+        outline: none !important;
+    }
+    </style>
+    
+    <script>
+        // Program filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.program-filter');
+            const programCards = document.querySelectorAll('.program-card');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const filter = this.getAttribute('data-filter');
+                    
+                    // Update active button
+                    filterButtons.forEach(btn => {
+                        btn.classList.remove('active');
+                        btn.classList.add('bg-gray-200', 'dark:bg-gray-700', 'text-gray-700', 'dark:text-gray-300');
+                        btn.classList.remove('bg-oxford-blue', 'text-white');
+                    });
+                    
+                    this.classList.add('active');
+                    this.classList.remove('bg-gray-200', 'dark:bg-gray-700', 'text-gray-700', 'dark:text-gray-300');
+                    this.classList.add('bg-oxford-blue', 'text-white');
+                    
+                    // Filter programs
+                    programCards.forEach(card => {
+                        const categories = card.getAttribute('data-category').split(' ');
+                        
+                        if (filter === 'all' || categories.includes(filter)) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+    <style>
+    .header-blur { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+    .dark .header-blur { background: rgba(17, 24, 39, 0.8); }
+    </style>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeToggleMobile = document.getElementById('theme-toggle-mobile');
+        const header = document.querySelector('header');
+        function handleScroll() {
+            const currentScrollY = window.scrollY;
+            const headerHeight = header ? header.offsetHeight : 0;
+            if (currentScrollY > headerHeight / 2) {
+                if (themeToggleMobile) { themeToggleMobile.classList.remove('hidden'); themeToggleMobile.classList.add('flex'); }
+            } else {
+                if (themeToggleMobile) { themeToggleMobile.classList.add('hidden'); themeToggleMobile.classList.remove('flex'); }
+            }
+        }
+        if (themeToggle && themeToggleMobile) { themeToggleMobile.addEventListener('click', function() { themeToggle.click(); }); }
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        handleScroll();
+    });
+    </script>
+</body>
+</html>
